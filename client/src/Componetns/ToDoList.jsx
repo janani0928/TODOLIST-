@@ -11,7 +11,7 @@ const ToDoList = () => {
 
     const getAllTodos = async ()=>{
         try{
-            const response= await axios.get('http://localhost:3000/todolist/getall');
+            const response= await axios.get('https://todolist-backend-bvi3.onrender.com/todolist/getall');
             setTodos(response.data.data);
         }catch(error){
             console.log(error);
@@ -28,7 +28,7 @@ const ToDoList = () => {
 
 const handleDelete= async (id)=>{
     try{
-        const result=await axios.delete(`http://localhost:3000/todolist/deleteToDo/${id}`);
+        const result=await axios.delete(`https://todolist-backend-bvi3.onrender.com/todolist/deleteToDo/${id}`);
         if(result.data.success==='deleted'){
             toast.success("todo deleted successfuly!");
             getAllTodos();   
@@ -60,7 +60,7 @@ const handleUpdate=async()=>{
         return; //block the update if all validation fail
     }
     try{
-        const result= await axios.put(`http://localhost:3000/todolist/updateToDo/${currentTodo._id}`,{
+        const result= await axios.put(`https://todolist-backend-bvi3.onrender.com/todolist/updateToDo/${currentTodo._id}`,{
             message: currentTodo.message
         }); 
         if(result.data.success==='updated'){
