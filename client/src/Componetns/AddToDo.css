@@ -1,7 +1,7 @@
-
-.container {
-    display: flex;
-    justify-content: flex-end;
+ 
+ .container {
+     display: flex;
+    justify-content: center;
     align-items: center;
     width: 800px;
     height: 100px;
@@ -12,26 +12,17 @@
     margin: 200px auto;
     padding: 0 30px;
     gap: 5px;
-    
-
-
-}
-
-.header {
-
-    position: absolute;
-    text-align: center;
-    margin-left: 420px;
-    margin-top: 5px;
-    color: white;
+ }
+h2{
     font-weight: bold;
-    font-size: 22px;
+    font-size: 32px;
     background: -webkit-linear-gradient(90deg, #d53369 0%, #daae51 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-right: 20px;
+   
 }
-
 
 input {
     padding: 8px 12px;
@@ -44,7 +35,6 @@ input {
 
 
 }
-
 .btn {
     padding: 8px 12px;
     width: 80px;
@@ -56,11 +46,10 @@ input {
     font-weight: bold;
     transition: 0.3s;
     cursor: pointer;
-    margin-right: 85px;
     font-size: 15px;
+  
 
 }
-
 .btn:hover {
     background-color: rgb(40, 189, 238);
 }
